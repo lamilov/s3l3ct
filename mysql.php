@@ -1,6 +1,6 @@
 <?php
 
-require_once("/var/www/html/config.inc");
+require_once("config.inc");
 
 $q = mysql_query("SELECT * FROM `forum_forum`.`core_hooks_files`",$link1) or die("Error Connecting...: ".mysql_error());
 while ($r = mysql_fetch_array($q)) {
